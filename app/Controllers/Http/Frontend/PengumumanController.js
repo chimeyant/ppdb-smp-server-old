@@ -46,7 +46,7 @@ class PengumumanController {
 
     const profilsekolah = await ProfilSekolah.query().first();
 
-    var date = await new Date();
+    var date = new Date();
     var current_date = dateFormat(new Date(), "yyyy-mm-dd");
     var tanggal_pengumuman = dateFormat(
       profilsekolah.tanggal_pengumuman,
@@ -87,6 +87,7 @@ class PengumumanController {
               verifikasi: null,
               status_lulus: null,
               asal_sekolah: null,
+              kelas: null,
               ttl: null,
               show: false,
             },
@@ -111,6 +112,7 @@ class PengumumanController {
           data["verifikasi"] = peserta.verifikasi;
           data["status_lulus"] = peserta.status == "L" ? true : false;
           data["asal_sekolah"] = peserta.asal_sekolah;
+          data["kelas"] = peserta.kelas;
           data["show"] = true;
 
           return response.json({
@@ -133,6 +135,7 @@ class PengumumanController {
               verifikasi: null,
               status_lulus: null,
               asal_sekolah: null,
+              kelas: null,
             },
           });
         }

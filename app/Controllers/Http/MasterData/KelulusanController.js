@@ -9,7 +9,6 @@ const Excel = require("exceljs");
 const Helpers = use("Helpers");
 const { validate } = use("Validator");
 
-
 /**
  * Resourceful controller for interacting with kelulusans
  */
@@ -203,12 +202,14 @@ class KelulusanController {
         let nopend = worksheet.getCell("B" + rowNumber).value;
         let nisn = worksheet.getCell("C" + rowNumber).value;
         let nama = worksheet.getCell("D" + rowNumber).value;
-        let tempat_lahir = worksheet.getCell("E" + rowNumber).value;
-        let tanggal_lahir = worksheet.getCell("F" + rowNumber).value;
-        let jalur = worksheet.getCell("G" + rowNumber).value;
-        let jarak = worksheet.getCell("H" + rowNumber).value;
-        let status = worksheet.getCell("I" + rowNumber).value;
-        let asal_sekolah = worksheet.getCell("J" + rowNumber).value;
+        let jenis_kelamin = worksheet.getCell("E" + rowNumber).value;
+        let kelas = worksheet.getCell("F" + rowNumber).value;
+        let tempat_lahir = worksheet.getCell("G" + rowNumber).value;
+        let tanggal_lahir = worksheet.getCell("H" + rowNumber).value;
+        let jalur = worksheet.getCell("I" + rowNumber).value;
+        let jarak = worksheet.getCell("J" + rowNumber).value;
+        let status = worksheet.getCell("K" + rowNumber).value;
+        let asal_sekolah = worksheet.getCell("L" + rowNumber).value;
 
         //proses simpan ke database
         const kelulusan = new Kelulusan();
@@ -216,6 +217,8 @@ class KelulusanController {
         kelulusan.nopend = nopend;
         kelulusan.nisn = nisn;
         kelulusan.nama = nama;
+        kelulusan.jenis_kelamin = jenis_kelamin;
+        kelulusan.kelas = kelas;
         kelulusan.tempat_lahir = tempat_lahir;
         kelulusan.tanggal_lahir = dateFormat(tanggal_lahir, "yyyy-mm-dd");
         kelulusan.jalur = jalur;
