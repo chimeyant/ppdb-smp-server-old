@@ -154,6 +154,7 @@ class PengumumanController {
             verifikasi: null,
             status_lulus: null,
             asal_sekolah: null,
+            kelas: null,
           },
         });
       }
@@ -187,6 +188,7 @@ class PengumumanController {
             verifikasi: null,
             status_lulus: null,
             asal_sekolah: null,
+            kelas: null,
             show: false,
           },
         });
@@ -210,6 +212,7 @@ class PengumumanController {
         data["verifikasi"] = peserta.verifikasi;
         data["status_lulus"] = peserta.status == "L" ? true : false;
         data["asal_sekolah"] = peserta.asal_sekolah;
+        data["kelas"] = peserta.kelas;
         data["show"] = true;
 
         return response.json({
@@ -232,6 +235,7 @@ class PengumumanController {
             verifikasi: null,
             status_lulus: null,
             asal_sekolah: null,
+            kelas: null,
           },
         });
       }
@@ -250,6 +254,7 @@ class PengumumanController {
           verifikasi: null,
           status_lulus: null,
           asal_sekolah: null,
+          kelas: null,
         },
       });
     }
