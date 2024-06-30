@@ -107,8 +107,8 @@ class PengumumanController {
             ", " +
             dateFormat(peserta.tanggal_lahir, "dd/mm/yyyy");
           data["jalur"] = peserta.jalur;
-          data["jarak"] = peserta.jalur == "ZONASI" ? peserta.jarak : "";
-          data["show_jarak"] = peserta.jalur == "ZONASI" ? true : false;
+          data["jarak"] = peserta.jalur == "Zonasi" ? peserta.jarak : "";
+          data["show_jarak"] = peserta.jalur == "Zonasi" ? true : false;
           data["verifikasi"] = peserta.verifikasi;
           data["status_lulus"] = peserta.status == "L" ? true : false;
           data["asal_sekolah"] = peserta.asal_sekolah;
@@ -207,8 +207,8 @@ class PengumumanController {
           ", " +
           dateFormat(peserta.tanggal_lahir, "dd/mm/yyyy");
         data["jalur"] = peserta.jalur;
-        data["jarak"] = peserta.jalur == "ZONASI" ? peserta.jarak : "";
-        data["show_jarak"] = peserta.jalur == "ZONASI" ? true : false;
+        data["jarak"] = peserta.jalur == "Zonasi" ? peserta.jarak : "";
+        data["show_jarak"] = peserta.jalur == "Zonasi" ? true : false;
         data["verifikasi"] = peserta.verifikasi;
         data["status_lulus"] = peserta.status == "L" ? true : false;
         data["asal_sekolah"] = peserta.asal_sekolah;
@@ -325,8 +325,8 @@ class PengumumanController {
             ", " +
             dateFormat(peserta.tanggal_lahir, "dd/mm/yyyy");
           data["jalur"] = peserta.jalur;
-          data["jarak"] = peserta.jalur == "ZONASI" ? peserta.jarak : "";
-          data["show_jarak"] = peserta.jalur == "ZONASI" ? true : false;
+          data["jarak"] = peserta.jalur == "Zonasi" ? peserta.jarak : "";
+          data["show_jarak"] = peserta.jalur == "Zonasi" ? true : false;
           data["verifikasi"] = peserta.verifikasi;
           data["status_lulus"] = peserta.status == "L" ? true : false;
           data["asal_sekolah"] = peserta.asal_sekolah;
@@ -425,8 +425,8 @@ class PengumumanController {
           ", " +
           dateFormat(peserta.tanggal_lahir, "dd/mm/yyyy");
         data["jalur"] = peserta.jalur;
-        data["jarak"] = peserta.jalur == "ZONASI" ? peserta.jarak : "";
-        data["show_jarak"] = peserta.jalur == "ZONASI" ? true : false;
+        data["jarak"] = peserta.jalur == "Zonasi" ? peserta.jarak : "";
+        data["show_jarak"] = peserta.jalur == "Zonasi" ? true : false;
         data["verifikasi"] = peserta.verifikasi;
         data["status_lulus"] = peserta.status == "L" ? true : false;
         data["asal_sekolah"] = peserta.asal_sekolah;
