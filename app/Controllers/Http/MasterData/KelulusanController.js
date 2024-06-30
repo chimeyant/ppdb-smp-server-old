@@ -54,7 +54,7 @@ class KelulusanController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async create({ request, response, view }) {}
+  async create({ request, response, view }) { }
 
   /**
    * Create/save a new kelulusan.
@@ -64,7 +64,7 @@ class KelulusanController {
    * @param {Request} ctx.request
    * @param {Response} ctx.response
    */
-  async store({ request, response }) {}
+  async store({ request, response }) { }
 
   /**
    * Display a single kelulusan.
@@ -92,7 +92,7 @@ class KelulusanController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async edit({ params, request, response, view }) {}
+  async edit({ params, request, response, view }) { }
 
   /**
    * Update kelulusan details.
@@ -192,7 +192,7 @@ class KelulusanController {
       const filexls = Helpers.publicPath("uploads/datas/") + file_excel;
       var workbook = new Excel.Workbook();
       workbook = await workbook.xlsx.readFile(filexls);
-      let worksheet = workbook.getWorksheet("Sheet1");
+      let worksheet = workbook.getWorksheet("data");
 
       let colId = worksheet.getColumn("A");
 

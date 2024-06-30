@@ -26,6 +26,7 @@ Route.get("pendaftars", "Frontend/HomeController.pendaftars");
 Route.get("pagu", "Frontend/HomeController.pagu");
 Route.get("images/:name", "MediaController.images");
 Route.post("pengumuman", "Frontend/PengumumanController.cekpengumuman");
+Route.post("pengumuman-by-auth", "Frontend/PengumumanController.cekpengumumanbyauth").middleware(['auth']);
 Route.get("jadwals", "Frontend/HomeController.jadwal");
 Route.get("persyaratans", "MasterData/DokumanController.index");
 Route.get("splash-info", "Utility/PengumumanController.topnews");
