@@ -54,7 +54,7 @@ class PengumumanController {
     );
     var current_time = dateFormat(date.getTime(), "HH:MM:ss");
 
-    if (current_date == tanggal_pengumuman) {
+    if (current_date != tanggal_pengumuman) {
       if (
         this.timeStringToFloat(current_time) >=
         this.timeStringToFloat(profilsekolah.jam_pengumuman)
