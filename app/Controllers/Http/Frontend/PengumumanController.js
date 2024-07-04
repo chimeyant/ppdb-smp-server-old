@@ -18,7 +18,8 @@ class PengumumanController {
     );
     var current_time = dateFormat(date.getTime(), "HH:MM:ss");
 
-    console.log(current_time);
+    return current_date;
+
 
     if (current_date == tanggal_pengumuman) {
       if (
