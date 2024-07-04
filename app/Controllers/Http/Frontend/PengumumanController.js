@@ -10,13 +10,15 @@ class PengumumanController {
     //validasi waktu
     const profilsekolah = await ProfilSekolah.query().first();
 
-    var date = await new Date();
+    var date = new Date();
     var current_date = dateFormat(new Date(), "yyyy-mm-dd");
     var tanggal_pengumuman = dateFormat(
       profilsekolah.tanggal_pengumuman,
       "yyyy-mm-dd"
     );
     var current_time = dateFormat(date.getTime(), "HH:MM:ss");
+
+    console.log(current_time);
 
     if (current_date == tanggal_pengumuman) {
       if (
